@@ -1,18 +1,38 @@
-﻿# Python
+﻿# Python bytecode
 __pycache__/
 *.py[cod]
-*.pyo
-*.pyd
+*$py.class
 
-# Virtual env
+# Build / packaging
+build/
+dist/
+.eggs/
+*.egg-info/
+
+# Virtual environments
 .venv/
 venv/
+env/
+ENV/
 
-# Local env
+# Environment files
 .env
+.env.*
+!.env.dev
+!.env.test
 *.env.local
 
-# Editor/system
+# Test / coverage / type cache
+.pytest_cache/
+.mypy_cache/
+.pyre/
+.pytype/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# IDE / OS files
 .vscode/
 .idea/
 .DS_Store
@@ -20,3 +40,6 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Jupyter
+.ipynb_checkpoints/
